@@ -3,7 +3,7 @@ import formatCurreny from "./FormatCurrency";
 import {useShoppingCart} from "../context/CartItemsContext";
 
 const StoreItem = ({id, name, price, imgUrl}) => {
-  const {cartItems, getQuantity, increaseQuantity, deCreaceQuantity, removeItem} = useShoppingCart();
+  const {getQuantity, increaseQuantity, deCreaceQuantity, removeItem} = useShoppingCart();
   return (
     <div className="col-12 col-md-5 col-lg-4 mt-4">
       <div className="card p-0">
